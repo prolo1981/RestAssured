@@ -30,7 +30,12 @@ public class ApiTest {
                          .get("/users")
                    .then()
                             .statusCode(200)
-                            .body("data[1].first_name",equalTo("Janet"));
+                            .body("data[1].first_name",equalTo("Janet"))
+                            .log().all();
+
+
+           
+
 
 
 
